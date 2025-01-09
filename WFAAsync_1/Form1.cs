@@ -37,7 +37,7 @@ namespace WFAAsync_1
 
         //Eger geriye deger döndürmeyen bir metodu Task'e cevirecekseniz direkt void Task yazarsınız...Task yazılan bir asenkron metot geriye deger döndürmeyen bir asenkron metottur...Eger geriye deger döndüren bir asenkron metot yaratacak iseniz o zaman Task tipine generic olarak döndüreceginiz degeri vermeniz gerekir...
 
-        public async Task Selamla()
+        public async Task SelamlaAsync()
         {
             await Task.Run(() =>
               {
@@ -59,7 +59,7 @@ namespace WFAAsync_1
         private async void button1_Click(object sender, EventArgs e)
         {
             //Eger bir metodun yasam alanında await keyword'u yazacak iseniz o metodun async keyword'u ileişaretlenmesi gerekir
-            await Selamla();
+            await SelamlaAsync();
 
 
 
